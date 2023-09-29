@@ -1,9 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
 /**
  *
  * @author DoHoangAnh
@@ -58,8 +52,8 @@ public class ArrayQueue {
     }
 
     void enqueue(Object x) {
-        if (isFull() && !grow()) {
-            return;
+        if (isFull()) {
+            grow();
         }
         if (last == max - 1 || last == -1) {
             a[0] = x;
