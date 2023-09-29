@@ -37,9 +37,6 @@ public class ArrayQueue {
         int i, j;
         int max1 = max + max / 2;
         Object[] a1 = new Object[max1];
-        if (a1 == null) {
-            return (false);
-        }
         if (last >= first) {
             for (i = first; i <= last; i++) {
                 a1[i - first] = a[i];
